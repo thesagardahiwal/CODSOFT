@@ -3,6 +3,9 @@
     margin: 0;
 
 }
+html {
+    scroll-behavior: smooth;
+}
 body{
     background-color: #000;
 }
@@ -42,17 +45,21 @@ body{
 
 /* Inside Container */
 
-.container .home, .about, .services {
+.container .home, .about, .services{
     height: 90vh;
 }
-
+.services{
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
 
 /* Inside Navbar */
 
-.navbar .brandName {
+.navbar .brandName a{
     font-size: 2rem;
     font-weight: 700;
     color: #001F3F;
+    text-decoration: none;
 }
 .navbar .brandName:hover{
     cursor: pointer;
@@ -73,6 +80,10 @@ body{
     padding: .75rem;
     transition: .5s;
     font-weight: 400;
+}
+.navbar .options ul li a{
+    text-decoration: none;
+    color: #000;
 }
 .navbar .options ul li:hover{
     scale: 1.05;
@@ -117,6 +128,10 @@ body{
 }
 .home .welc div {
     padding-top: 5vh;
+}
+.home .welc div a {
+    text-decoration: none;
+    color: aliceblue;
 }
 .home .welc div button:first-child {
     background-color: orangered;
@@ -353,6 +368,12 @@ img:hover {
     .container {
         padding: 0;
     }
+    .navbar .options .menu {
+        display: block;
+    }
+    .navbar .options ul {
+        display: none;
+    }
     
 
     
@@ -427,15 +448,11 @@ img:hover {
     .navbar {
         align-items: center;
     }
-    .navbar .options ul {
-        display: none;
-    }
+    
     .navbar .options {
         margin-right: 1.5rem;
     }
-    .navbar .options .menu {
-        display: block;
-    }
+    
     .home {
         background-image: url('./images/home.jpg');
         background-position: center;
