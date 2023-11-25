@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+#main {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+
+}
+
+#header {
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    height: 5rem;
+    color: white;
+    background-color: blue;
+    padding: 10px;
+}
+
+#container {
+    min-height: 100vh;
+    background-color: rebeccapurple;
+    padding: 10px;
+}
+#footer {
+    min-height: 20vh;
+    padding: 10px;
+}
+
+#home, #about, #contactUs, #skills, #project {
+    height: 90vh;
+    background-color: #fff;
+    margin-bottom: 2rem;
+}
+
+/* Navbar CSS */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(220, 220, 31);
+    width: 95%;
+    align-items: center;
+}
+
+.navbar .leftSide {
+    display: flex;
+    width: 60%;
+    background-color: #893131;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .leftSide .name {
+    font-size: 1.75rem;
+}
+.options ul{
+    display: flex;
+    list-style: none;
+    font-size: 1.25rem;
+}
+
+.options ul a {
+    text-decoration: none;
+    padding: 0 0.5rem;
+    color: black;
+    letter-spacing: -1px;
+    font-weight: 400;
+    font-family: 'Plus Jakarta Sans';
+}
+
+.navbar .rightSide {
+    padding: 1rem;
+}
+
+.btn {
+    padding: 1rem 1.25rem;
+    background-color: rebeccapurple;
+    color: #fff;
+    border-radius: 1.25rem;
+    border: none;
+}
+
+/* Home CSS */
+
+#home {
+    display: flex;
+}
+
+#home .leftSide {
+    background-color: rgb(243, 235, 235);
+    width: 70vw;
+}
+#home .leftSide div{
+    padding-top: 30vh;
+    font-family: 'Noto Sans', sans-serif;
+}
+#home .leftSide h1 {
+    font-size: 7rem;
+    line-height: 0.8;
+    font-family: 'Cookie';
+    font-weight: 600;
+}
+.sp-sm {
+    color: transparent;
+    font-size: 10rem;
+    font-weight: 600;
+    letter-spacing: -5px;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 3rem;
+    -webkit-text-stroke: 4px rgb(18, 18, 18);
+    
+}
+#home .rightSide {
+    background-color: gray;
+    flex: 1;
+}
+#home .rightSide img {
+    height: 80vh;
+}
+
+#about {
+    display: flex;
+}
+
+#about .leftSide {
+    width: 50%;
+    text-align: left;
+    padding-left: 3rem;
+    tab-size: 2rem;
+    padding-right: 5vw;
+}
+#about .leftSide div:first-child {
+    margin-top: 10rem;
+}
+#about .leftSide div h1 {
+    padding-bottom: 3rem;
+}
+#about .rightSide {
+    width: 50%;
+}
+#about .rightSide div:first-child {
+    width: 60%;
+    font-size: 2rem;
+    margin-top: 3.25rem;
+}
+#about .rightSide .image {
+    margin-left: 5rem;
+}
