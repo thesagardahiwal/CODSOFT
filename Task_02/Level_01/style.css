@@ -34,17 +34,55 @@ html {
     background-color: rebeccapurple;
     padding: 10px;
 }
+
 #footer {
     min-height: 20vh;
     padding: 10px;
 }
 
-#home, #about, #contactUs, #skills, #project {
-    height: 90vh;
+#home,
+#about,
+#contactUs,
+#skills,
+#project {
+    height: 100vh;
     background-color: #fff;
     margin-bottom: 2rem;
 }
 
+/* Universal CSS */
+
+.na {
+    font-family: 'Cookie';
+    font-size: 3rem;
+    padding: 0 .5rem;
+}
+
+.btn {
+    padding: 1rem 1.25rem;
+    background-color: rebeccapurple;
+    color: #fff;
+    border-radius: 1.25rem;
+    border: none;
+}
+
+.sp-sm {
+    color: transparent;
+    font-weight: 600;
+    -webkit-text-stroke: 1px rgb(18, 18, 18);
+}
+
+.gr {
+    background: linear-gradient(to right, #f32170, #ff6b08,
+            #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.hd {
+    font-size: 7vh;
+    font-weight: 700;
+}
 /* Navbar CSS */
 
 .navbar {
@@ -62,10 +100,14 @@ html {
     align-items: center;
     justify-content: space-between;
 }
+
 .navbar .leftSide .name {
     font-size: 1.75rem;
 }
-.options ul{
+
+
+
+.options ul {
     display: flex;
     list-style: none;
     font-size: 1.25rem;
@@ -84,13 +126,7 @@ html {
     padding: 1rem;
 }
 
-.btn {
-    padding: 1rem 1.25rem;
-    background-color: rebeccapurple;
-    color: #fff;
-    border-radius: 1.25rem;
-    border: none;
-}
+
 
 /* Home CSS */
 
@@ -101,31 +137,21 @@ html {
 #home .leftSide {
     background-color: rgb(243, 235, 235);
     width: 70vw;
+    text-align: center;
 }
-#home .leftSide div{
+
+#home .leftSide div {
     padding-top: 30vh;
     font-family: 'Noto Sans', sans-serif;
+    color: rgb(0, 0, 135);
 }
-#home .leftSide h1 {
-    font-size: 7rem;
-    line-height: 0.8;
-    font-family: 'Cookie';
-    font-weight: 600;
-}
-.sp-sm {
-    color: transparent;
-    font-size: 10rem;
-    font-weight: 600;
-    letter-spacing: -5px;
-    font-family: 'Montserrat', sans-serif;
-    padding-left: 3rem;
-    -webkit-text-stroke: 4px rgb(18, 18, 18);
-    
-}
+
+
 #home .rightSide {
     background-color: gray;
     flex: 1;
 }
+
 #home .rightSide img {
     height: 80vh;
 }
@@ -141,20 +167,83 @@ html {
     tab-size: 2rem;
     padding-right: 5vw;
 }
+
 #about .leftSide div:first-child {
     margin-top: 10rem;
 }
+
 #about .leftSide div h1 {
     padding-bottom: 3rem;
 }
+
 #about .rightSide {
     width: 50%;
 }
+
 #about .rightSide div:first-child {
     width: 60%;
     font-size: 2rem;
     margin-top: 3.25rem;
 }
+
 #about .rightSide .image {
     margin-left: 5rem;
+}
+
+/* Skills CSS */
+
+#skills .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#skills .items .item {
+    width: 20vw;
+    height: 25vh;
+    background-color: red;
+    margin: 1rem;
+}
+
+/* Projects Session */
+
+#project .items {
+    display: flex;
+    flex-direction: column;
+}
+#project .items .item {
+    height: 8rem;
+    margin: 2rem 0;
+    background-color: rgb(192, 89, 89);
+}
+
+/* Contact CSS */
+
+#contactUs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+#contactUs .leftSide {
+    background-color: rgb(62, 61, 57);
+    width: 50%;
+    font-size: 2rem;
+
+}
+
+#contactUs .items {
+    background-color: gray;
+    width: 50%;
+}
+
+#contactUs .items .item {
+    
+}
+#inp {
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
 }

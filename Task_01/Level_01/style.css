@@ -5,6 +5,7 @@
 }
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
 }
 body{
     background-color: #000;
@@ -265,7 +266,6 @@ hr{
 }
 #service {
     width: 100vw;
-    padding: 5vw;
     font-weight: 100;
     font-size: 1.25rem;
 }
@@ -363,6 +363,7 @@ img:hover {
     .about .right .img img{
         width: 100vw;
         height: auto;
+        margin-left: 10px;
         
     }
     .container {
