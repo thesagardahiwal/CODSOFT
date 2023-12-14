@@ -5,7 +5,7 @@ gsap.to ("#about .leftSide", {
         scroller:"body",
         start: "top 80%",
         end: "bottom 20%",
-        scrub: 1
+        scrub: 3
     },
     translateX: 50,
     
@@ -16,7 +16,7 @@ gsap.to ("#about .rightSide", {
         scroller:"body",
         start: "top 80%",
         end: "bottom 20%",
-        scrub: 1
+        scrub: 3
     },
     translateX: -30,
     
@@ -39,7 +39,7 @@ gsap.to ("#home .rightSide img", {
         scroller:"body",
         start: "top 80%",
         end: "bottom 20%",
-        scrub: 2,
+        scrub: 4,
     },
     translateX: -10,
     
@@ -92,7 +92,7 @@ gsap.to("#project .items .item", {
         scroller:"body",
         start: "top 80%",
         end: "bottom 20%",
-        scrub : 1
+        scrub : 3
     },
     rotationY: 0,
     duration: 2,
@@ -111,7 +111,7 @@ gsap.to("#about .rightSide .image img", {
         scroller: "body",
         start: "top 80%",
         end: "botton 20%",
-        scrub: 2
+        scrub: 3
     },
     duration: 2,
     rotateY: 0

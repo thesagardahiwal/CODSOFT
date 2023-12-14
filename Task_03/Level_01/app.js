@@ -7,17 +7,20 @@ for (let button of buttons) {
         setTimeout(()=>{
             button.style.opacity = 1;
         },500)
-        console.log(num);
-        if (num == "=") {
-            string = eval(string);
-            document.querySelector('input').value = string;
-
-        } else if (num == 'AC') {
-            string = "";
-            document.querySelector('input').value = string;
-        } else{
-            string = string + num;
-            document.querySelector('input').value = string;
+        try {
+            if (num == "=") {
+                string = eval(string);
+                document.querySelector('input').value = string;
+    
+            } else if (num == 'AC') {
+                string = "";
+                document.querySelector('input').value = string;
+            } else{
+                string = string + num;
+                document.querySelector('input').value = string;
+            }
+        } catch (e) {
+            document.querySelector('input').value = "";
         }
     })
 }
